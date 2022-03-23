@@ -33,7 +33,6 @@ class SecondActivity : AppCompatActivity() {
             showData(dataPost)
         }
 
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -42,7 +41,6 @@ class SecondActivity : AppCompatActivity() {
         }
         return true
     }
-
 
     private fun showData(itemPost: ItemPost) {
 
@@ -60,6 +58,7 @@ class SecondActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
         }
 
+        binding.collapsingMain.title = itemPost.txtTitle
     }
 
 }
