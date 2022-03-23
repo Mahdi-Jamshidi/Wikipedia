@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/drawable/ic_cancel.xml" value="0.2335" />
+        <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/drawable/profile_bk.xml" value="0.2335" />
         <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/layout/activity_main.xml" value="0.24259259259259258" />
         <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/layout/activity_second.xml" value="0.24259259259259258" />
-        <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/layout/fragment_profile.xml" value="0.24259259259259258" />
+        <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/layout/content_profile.xml" value="0.24259259259259258" />
+        <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/layout/dialog_change_profile.xml" value="0.33" />
+        <entry key="..\:/android/AndroidStudioProjects/Wikipedia/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="..\:/android/AndroidStudioProjects/app/src/main/res/drawable/ic_video_maker.xml" value="0.2065" />
         <entry key="..\:/android/AndroidStudioProjects/app/src/main/res/drawable/ic_wikipedia_detail.xml" value="0.2775" />
         <entry key="..\:/android/AndroidStudioProjects/app/src/main/res/drawable/ic_wikipedia_icon.xml" value="0.27" />

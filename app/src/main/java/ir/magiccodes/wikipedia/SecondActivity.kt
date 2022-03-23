@@ -58,6 +58,7 @@ class SecondActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
         }
 
+        //Set the toolbar title with the item
         binding.collapsingMain.title = itemPost.txtTitle
     }
 

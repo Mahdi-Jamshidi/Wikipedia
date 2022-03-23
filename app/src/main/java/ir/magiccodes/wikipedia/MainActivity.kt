@@ -1,14 +1,18 @@
 package ir.magiccodes.wikipedia
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import cn.pedant.SweetAlert.SweetAlertDialog
+import com.google.android.material.snackbar.Snackbar
 import ir.magiccodes.wikipedia.databinding.ActivityMainBinding
 import ir.magiccodes.wikipedia.fragment.FragmentExplore
 import ir.magiccodes.wikipedia.fragment.FragmentProfile
@@ -62,28 +66,49 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.menu_photographer ->{
+                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
 
                 }
 
                 R.id.menu_video_maker ->{
+                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
+
+                    Snackbar
+                        .make(binding.root, "No Internet!", Snackbar.LENGTH_LONG)
+                        .setAction("Retry") {
+                            Toast.makeText(this, "checking network", Toast.LENGTH_SHORT).show()
+                        }
+                        .setActionTextColor(ContextCompat.getColor(this, R.color.white))
+                        .setBackgroundTint(ContextCompat.getColor(this, R.color.blue))
+                        .show()
 
                 }
 
                 R.id.menu_translator ->{
+                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
 
                 }
                 //-----------------------
                 R.id.menu_open_wikipedia ->{
+                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
 
+                    openWebsite("https://www.wikipedia.org/")
                 }
 
                 R.id.menu_open_wikimedia ->{
-
+                    binding.drawerLayoutMain.closeDrawer(GravityCompat.START)
+                    openWebsite("https://www.wikimedia.org/")
                 }
             }
 
             true
         }
+    }
+
+    private fun openWebsite(url: String) {
+
+        val intent = Intent(Intent.ACTION_VIEW , Uri.parse(url))
+        startActivity(intent)
     }
 
     fun bottomNavigation(){
